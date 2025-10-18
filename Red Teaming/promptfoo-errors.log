@@ -1,0 +1,15 @@
+2025-08-16T21:09:42.027Z [ERROR]: [POST /providers/test] Error calling provider API
+error: Request failed after 1 retries: TypeError: fetch failed (Cause: Error: getaddrinfo ENOTFOUND api.example.com)
+providerOptions: {"id":"http","config":{"stateful":true,"request":"POST /v1/chat/completions HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+Authorization: Bearer {{api_key}}
+
+{
+  \"messages\": [
+    {
+      \"role\": \"user\",
+      \"content\": \"{{prompt}}\"
+    }
+  ]
+}"}}
